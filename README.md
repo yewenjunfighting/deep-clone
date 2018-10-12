@@ -1,29 +1,6 @@
 # js-deep copy 
 javaScript
-//浅复制
-		  var father = {
-			name : 'superman',
-			adress : 'tower',
-			wife : 'hero',
-			job : '辛苦',
-			son : 'brother',
-			son2 : 'didi',
-			daughter : 'sister',
-			Father : {
 		
-			},
-			shuzu : []
-		}
-		var son = {
-			th : []
-		}
-		var i = 0; 
-		/* for(var prop in father){
-			son.th[i] = father[prop];
-			i ++;
-		}
-		father.Father.name = "我是引用值";
-		father.shuzu[0] = 1;
     
     
 		//深复制A instanceof B 只要A的原型链上有B的原型就返回true,要实现这个就要区分引用值是数组还是对象
@@ -78,5 +55,29 @@ javaScript
 				}
 			}
 		}
+		//浅复制
+		  var father = {
+			name : 'superman',
+			adress : 'tower',
+			wife : 'hero',
+			job : '辛苦',
+			son : 'brother',
+			son2 : 'didi',
+			daughter : 'sister',
+			Father : {
+		
+			},
+			shuzu : []
+		}
+		var son = {
+			th : []
+		}
+		var i = 0; 
+		/* for(var prop in father){
+			son.th[i] = father[prop];
+			i ++;
+		}
+		father.Father.name = "我是引用值";
+		father.shuzu[0] = 1;
 		copy(target, origin);
 		console.log(target);
