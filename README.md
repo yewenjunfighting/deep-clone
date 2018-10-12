@@ -1,4 +1,4 @@
-# js-
+# js-deep copy 
 javaScript
 //浅复制
 		  var father = {
